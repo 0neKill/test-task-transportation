@@ -1,0 +1,104 @@
+@import "src/constants/styles";
+
+.table {
+  min-width: 570px;
+  width: 100%;
+  height: 100%;
+  @media (max-width: $MD-XL) {
+    min-width: 100%;
+  }
+
+  .ant-table {
+    background: #27292E;
+    border: 1px solid #000000;
+    box-shadow: 10px 11px 4px rgba(47, 50, 56, 0.25);
+
+    .ant-table-content {
+      @media (max-width: $MD-XL) {
+        font-size: 12px;
+      }
+      @media (max-width: $MD-SM) {
+        font-size: 8px;
+      }
+
+      .ant-table-thead {
+        .ant-table-cell {
+          color: $COLOR-MAIN;
+          font-weight: $FW-REGULAR;
+          background: #404149;
+          box-shadow: 5px 0 4px rgba(0, 0, 0, 0.25);
+          border: 0;
+          @media (max-width: $MD-XL) {
+            padding: 10px;
+          }
+          @media (max-width: $MD-SM) {
+            padding: 5px;
+          }
+
+          &::before {
+            display: none;
+          }
+        }
+      }
+
+      .ant-table-tbody {
+        .ant-table-placeholder {
+
+          .ant-empty-description {
+            color: #FFFFFF;
+          }
+
+          .ant-table-cell {
+            border: 0;
+
+            &:hover {
+              background-color: transparent;
+            }
+
+          }
+
+        }
+
+        .ant-table-row {
+          .ant-table-cell {
+            border: 0 !important;
+            border-radius: 0 !important;
+            color: $COLOR-MAIN;
+            font-weight: $FW-BOLD;
+            @media (max-width: $MD-XL) {
+              padding: 10px;
+            }
+            @media (max-width: $MD-SM) {
+              padding: 5px;
+            }
+
+            &.ant-table-cell-row-hover {
+              background: transparent;
+            }
+          }
+        }
+
+        .ant-table-row-selected {
+          filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.6));
+          background-color: #27292E;
+
+          .ant-table-cell {
+            background: transparent;
+            border-bottom: 2px solid #904848 !important;
+            border-top: 2px solid #904848 !important;
+
+            &.ant-table-selection-column {
+              border-left: 2px solid #904848 !important;
+            }
+
+            &:last-child {
+              border-right: 2px solid #904848 !important;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
