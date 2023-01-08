@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 
-import { Spin } from 'antd/lib';
+import { Spin } from 'antd';
 
 interface Props {
     className?: string,

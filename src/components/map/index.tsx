@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import { MapContainer, Marker, Polyline, Popup, TileLayer } from 'react-leaflet';
 
 import 'leaflet/dist/leaflet.css';
-import 'leaflet-defaulticon-compatibility';
+import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.min';
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 import './map.style.scss';
 
