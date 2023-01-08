@@ -1,6 +1,6 @@
 import type { AxiosResponse } from 'axios';
 
-import { $api, EntryPoint, Params, RequestByEntryPoint } from '../http';
+import { $api, EntryPoint, Params, RequestByEntryPoint } from 'helpers/http';
 
 
 class ApiService {

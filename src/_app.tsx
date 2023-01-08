@@ -3,9 +3,9 @@ import { Provider } from 'react-redux';
 
 import './_index.scss';
 
-import { store } from './store';
+import { store } from 'store';
 
-import { Home } from './pages';
+import { Home } from 'pages';
 
 
 export const App: React.FunctionComponent = () => {

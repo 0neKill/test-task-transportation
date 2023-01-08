@@ -1,5 +1,6 @@
 import { createSlice, Draft, PayloadAction, SliceCaseReducers } from '@reduxjs/toolkit';
-import { Order } from '../../__types__';
+
+import { Order } from '__types__';
 
 export interface InitialStateOrder {
     data: Array<Order>,

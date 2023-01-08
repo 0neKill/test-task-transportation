@@ -1,6 +1,6 @@
 import { createSlice, Draft, PayloadAction, SliceCaseReducers } from '@reduxjs/toolkit';
 
-import type { MapRoute } from '../../__types__';
+import type { MapRoute } from '__types__';
 
 export interface InitialStateMapRoute {
     data: MapRoute,

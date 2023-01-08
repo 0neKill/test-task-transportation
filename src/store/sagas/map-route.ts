@@ -1,8 +1,9 @@
-import { Order, Waypoint } from '../../__types__';
 import { call, put, takeEvery } from 'redux-saga/effects';
-import { orderSlice } from '../slices/orders';
-import { apiService, EntryPoint, parseWaypoints } from '../../helpers';
-import { mapRouteSlice } from '../slices/map-route';
+
+import type { Order, Waypoint } from '__types__';
+
+import { apiService, EntryPoint, parseWaypoints } from 'helpers';
+import { mapRouteSlice, orderSlice } from 'store/slices';
 
 function* workerMapRoute(props: { type: string, payload: Order }) {
     try {

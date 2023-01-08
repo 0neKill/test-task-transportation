@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Order } from '../../__types__';
+import { Order } from '__types__';
 
 type Request = {
     [key in EntryPoint]: (params?: Params) => ({ uri: string })

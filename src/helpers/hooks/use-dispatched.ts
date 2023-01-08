@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { bindActionCreators } from '@reduxjs/toolkit';
 
-import { rootActions } from '../../store/slices';
+import { rootActions } from 'store/slices';
 
 
 export const useDispatchedActions = () => {

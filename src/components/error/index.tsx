@@ -1,5 +1,6 @@
 import React from 'react';
-import { Result } from 'antd';
+
+import { Result } from 'antd/lib';
 
 import './error.style.scss';
 

@@ -2,23 +2,17 @@ import React from 'react';
 
 import './home.style.scss';
 
-import { Table } from '../../components/table';
-import { useDispatchedActions, useQueryOrders, useTypedSelector } from '../../helpers/hooks';
-import { DataTypeTable } from '../../constants';
-import { getMapRoute } from '../../helpers';
-import { Loader } from '../../components';
+import type { DataTypeTable } from 'const';
 
+import { useDispatchedActions, useQueryOrders, useQueryMapRoute } from 'helpers';
+import { Loader, Table } from 'components';
 
-const Map = React.lazy(() => import('../../components/map'));
+const Map = React.lazy(() => import('components/map'));
 
 
 export const Home: React.FunctionComponent = () => {
     const { data, isLoading, errorMessage, currentItem } = useQueryOrders();
-    const {
-        data: dataMap,
-        errorMessage: errorMessageMap,
-        isLoading: isLoadingMap,
-    } = useTypedSelector(getMapRoute);
+    const { dataMap, isLoadingMap, errorMessageMap } = useQueryMapRoute();
     const { setCurrentItem } = useDispatchedActions();
 
     const handlerOnChangeCurrentItem = (item: DataTypeTable) => {

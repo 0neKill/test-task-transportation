@@ -1,16 +1,15 @@
 import React from 'react';
 import clsx from 'clsx';
-import { Spin } from 'antd/lib/';
+import { MapContainer, Marker, Polyline, Popup, TileLayer } from 'react-leaflet';
 
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-defaulticon-compatibility';
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 import './map.style.scss';
 
-import { MapContainer, Marker, Polyline, Popup, TileLayer } from 'react-leaflet';
-import { MapRoute } from '../../__types__';
-import { Error } from '../error';
-import { Loader } from '../loader';
+import type { MapRoute } from '__types__';
+
+import { Error, Loader } from 'components';
 
 interface Props {
     data: MapRoute,
@@ -48,7 +47,7 @@ const Map: React.FunctionComponent<Props> = ({ className, data, isLoading, error
                                 {`${data.to[0]} ${data.to[1]}`}
                             </Popup>
                         </Marker>
-                        <Polyline pathOptions={{ color: 'red' }} positions={data.steps as any} />
+                        <Polyline pathOptions={{ color: '#c0063e', weight: 5 }} positions={data.steps} />
                     </MapContainer>
                 )
             }

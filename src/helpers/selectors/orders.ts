@@ -1,5 +1,6 @@
-import { RootReducers } from '../../store/slices';
 import { createSelector } from '@reduxjs/toolkit';
+
+import { RootReducers } from 'store/slices';
 
 const getOrdersData = (state: RootReducers) => state.order.data;
 

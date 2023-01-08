@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { useTypedSelector } from './use-typed-selector';
-import { getOrderDataBeforeChanged, getOrders } from '../selectors';
 import { useDispatchedActions } from './use-dispatched';
+import { getOrderDataBeforeChanged, getOrders } from 'helpers/selectors';
 
 export const useQueryOrders = () => {
     const { fetchOrderData } = useDispatchedActions();

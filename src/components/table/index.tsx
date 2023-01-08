@@ -1,11 +1,12 @@
 import React from 'react';
 import clsx from 'clsx';
-import { Result, Table as TableView } from 'antd';
+import { Table as TableView } from 'antd';
 
 import './table.style.scss';
 
-import { DataTypeTable, tableColumn } from '../../constants';
-import { Error } from '../error';
+import { type DataTypeTable, tableColumn } from 'const';
+
+import { Error } from 'components';
 
 
 interface Props {

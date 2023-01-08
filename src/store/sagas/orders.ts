@@ -1,8 +1,9 @@
 import { call, takeEvery, put } from 'redux-saga/effects';
 
-import { orderSlice } from '../slices/orders';
-import { Order } from '../../__types__';
-import { apiService, EntryPoint } from '../../helpers';
+import type { Order } from '__types__';
+
+import { apiService, EntryPoint } from 'helpers';
+import { orderSlice } from 'store/slices';
 
 const delay = (ms: number) => {
     return new Promise(resolve => {

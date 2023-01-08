@@ -22,7 +22,6 @@ export const tableColumn: ColumnsType<DataTypeTable> = [
     {
         title: 'Координаты От lng',
         dataIndex: 'from_lng',
-
     },
     {
         title: 'Координаты До lat',

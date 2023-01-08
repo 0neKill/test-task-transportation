@@ -17,13 +17,5 @@ export interface Waypoint {
                 }
             ],
         }
-    ],
-    waypoints: [
-        {
-            distance: number,
-        },
-        {
-            distance: number,
-        }
     ]
 }
