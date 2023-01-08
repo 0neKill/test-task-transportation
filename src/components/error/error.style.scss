@@ -1,0 +1,13 @@
+@import "src/constants/styles/index";
+
+.error {
+  .ant-result {
+    &-title {
+      color: $COLOR-MAIN;
+    }
+
+    &-subtitle {
+      color: $COLOR-MAIN;
+    }
+  }
+}

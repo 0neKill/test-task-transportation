@@ -26,6 +26,21 @@
     #{$home}__right {
       height: 100%;
       padding: 30px 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      #{$home}__title {
+        color: #E9E9E9;
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      #{$home}__description {
+        color: #E9E9E9;
+        font-size: 20px;
+      }
     }
   }
 }

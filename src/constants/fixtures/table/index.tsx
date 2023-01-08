@@ -1,7 +1,7 @@
 import type { ColumnsType } from 'antd/es/table';
 
 
-export interface DataType {
+export interface DataTypeTable {
     key: number,
     from_lat: number,
     from_lng: number,
@@ -9,7 +9,7 @@ export interface DataType {
     to_lng: number,
 }
 
-export const tableColumn: ColumnsType<DataType> = [
+export const tableColumn: ColumnsType<DataTypeTable> = [
     {
         title: '№ заявки',
         dataIndex: 'key',
